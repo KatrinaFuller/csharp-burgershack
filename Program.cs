@@ -1,12 +1,17 @@
 ﻿using System;
+using csharp_burgershack.Controllers;
 
 namespace csharp_burgershack
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      DrinkController dc = new DrinkController();
+      while (true)
+      {
+        dc.UserInput();
+      }
     }
+  }
 }
