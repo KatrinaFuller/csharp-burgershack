@@ -13,7 +13,6 @@ namespace csharp_burgershack.Controllers
     {
       _drinkService.GetDrinks();  //now messages have been populated
       Print();
-      Console.WriteLine("Press Q to quit");
       string choice = Console.ReadLine().ToLower();
       switch (choice)
       {
@@ -28,9 +27,9 @@ namespace csharp_burgershack.Controllers
       foreach (string message in _drinkService.Messages)
       {
         System.Console.WriteLine(message); //after this loop need to empty this message
-        _drinkService.Messages.Clear();  //prints them and then empties the list
-        Console.WriteLine("Type a number to see details or Q to quit");
       }
+      Console.WriteLine("Type a number to see details or Q to quit");
+      _drinkService.Messages.Clear();  //prints them and then empties the list
     }
 
 
