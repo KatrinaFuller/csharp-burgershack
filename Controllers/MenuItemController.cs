@@ -3,15 +3,15 @@ using csharp_burgershack.Services;
 
 namespace csharp_burgershack.Controllers
 {
-  public class DrinkController
+  public class MenuItemController
   {
     //prop
-    private DrinkService _drinkService { get; set; } = new DrinkService();
+    private MenuItemService _menuItemService { get; set; } = new MenuItemService();
 
     //method
     public void UserInput()
     {
-      _drinkService.GetDrinks();  //now messages have been populated
+      _menuItemService.GetDrinks();  //now messages have been populated
       Print();
       string choice = Console.ReadLine().ToLower();
       Console.Clear();
@@ -23,7 +23,7 @@ namespace csharp_burgershack.Controllers
         default:
           if (int.TryParse(choice, out int index)) //to figure out if it is a number
           {
-            _drinkService.GetDrinks(index - 1); //prints the drink details
+            _menuItemService.GetDrinks(index - 1); //prints the drink details
             Print();
             Console.ReadKey();
             Console.Clear();
@@ -39,12 +39,12 @@ namespace csharp_burgershack.Controllers
 
     private void Print() //this is just like a draw function
     {
-      foreach (string message in _drinkService.Messages)
+      foreach (string message in _menuItemService.Messages)
       {
         System.Console.WriteLine(message); //after this loop need to empty this message
       }
       Console.WriteLine("Type a number to see details or Q to quit");
-      _drinkService.Messages.Clear();  //prints them and then empties the list
+      _menuItemService.Messages.Clear();  //prints them and then empties the list
     }
 
 

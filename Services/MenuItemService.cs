@@ -3,7 +3,7 @@ using csharp_burgershack.Models;
 
 namespace csharp_burgershack.Services
 {
-  public class DrinkService
+  public class MenuItemService
   {
     //prop
     public List<Drink> Drinks { get; set; }
@@ -52,7 +52,7 @@ press any key to return to the main menu
 
 
     //constructor
-    public DrinkService()
+    public MenuItemService()
     {
       Messages = new List<string>();
       Drinks = new List<Drink>();
