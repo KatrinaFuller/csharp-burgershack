@@ -14,11 +14,26 @@ namespace csharp_burgershack.Controllers
       _drinkService.GetDrinks();  //now messages have been populated
       Print();
       string choice = Console.ReadLine().ToLower();
+      Console.Clear();
       switch (choice)
       {
         case "q":
           Environment.Exit(1);
           break;
+        default:
+          if (int.TryParse(choice, out int index)) //to figure out if it is a number
+          {
+            _drinkService.GetDrinks(index - 1); //prints the drink details
+            Print();
+            Console.ReadKey();
+            Console.Clear();
+          }
+          else
+          {
+            System.Console.WriteLine("Invalid Command!");
+          }
+          break;
+
       }
     }
 

@@ -21,6 +21,25 @@ namespace csharp_burgershack.Services
       }
     }
 
+    internal void GetDrinks(int index)
+    {
+      if (index < Drinks.Count && index > -1)
+      {
+        Drink d = Drinks[index];  //creating an alias
+        Messages.Add($@"
+Title: {d.Title}
+Price: {d.Price:c}
+Description: {d.Description}
+
+press any key to return to the main menu
+        ");
+      }
+      else
+      {
+        Messages.Add("Invalid Choice");
+      }
+    }
+
     public void SetUp()
     {
       Drink drpepper = new Drink("Dr Pepper", 5, "The best soda eva");
