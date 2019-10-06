@@ -43,8 +43,8 @@ namespace csharp_burgershack.Controllers
       {
         System.Console.WriteLine(message); //after this loop need to empty this message
       }
-      Console.WriteLine("Type a number to see details or Q to quit");
       _menuItemService.Messages.Clear();  //prints them and then empties the list
+      System.Console.WriteLine();
     }
 
 

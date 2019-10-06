@@ -12,13 +12,14 @@ namespace csharp_burgershack.Services
     //method
     public void GetDrinks()
     {
-      Messages.Add("--- Available Drinks ---");
+      Messages.Add("--- Burger Shack Menu ---");
       for (int i = 0; i < MenuItem.Count; i++)
       {
         MenuItem d = MenuItem[i];
         Messages.Add($"{i + 1}: {d.Title} ${d.Price}"); //adds to the message
 
       }
+      Messages.Add("Type a number to see details or Q to quit");
     }
 
     internal void GetDrinks(int index)
@@ -56,7 +57,7 @@ namespace csharp_burgershack.Services
       Side curds = new Side("Cheese curds", 3, "delicious fried cheese");
       Side apple = new Side("Apple slices", 2, "a healthy option instead of fries");
 
-      MenuItem.AddRange(new MenuItem[] { drpepper, chocolateSmoothie, coffee, monster });
+      MenuItem.AddRange(new MenuItem[] { drpepper, chocolateSmoothie, coffee, monster, burger, sandwhich, fish, tacos, fries, curlyFries, curds, apple });
     }
 
 
