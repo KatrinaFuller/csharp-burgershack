@@ -9,6 +9,17 @@ namespace csharp_burgershack.Models
 
 
     //method
+    public virtual string GetTemplate()
+    {
+      string template = $@"
+Title: {Title}
+Price: {Price:c}
+Description: {Description}
+
+press any key to return to the main menu
+      ";
+      return template;
+    }
 
     //constructor
     public MenuItem(string title, int price, string description)

@@ -7,7 +7,7 @@ namespace csharp_burgershack
   {
     static void Main(string[] args)
     {
-      DrinkController dc = new DrinkController();
+      MenuItemController dc = new MenuItemController();
       while (true)
       {
         dc.UserInput();
