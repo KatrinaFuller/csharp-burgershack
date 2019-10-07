@@ -53,7 +53,7 @@ namespace csharp_burgershack.Services
       Entree nuggets = new Entree("Chicken Nuggets", 5, "5 piece chicken nuggets");
 
       Side fries = new Side("French fries", 2, "perfect crispy fries");
-      Side curlyFries = new Side("Curly Fries", 3, "when regualr fires are not fun enough");
+      Side curlyFries = new Side("Curly Fries", 3, "when regular fries are not fun enough");
       Side curds = new Side("Cheese curds", 3, "delicious fried cheese");
       Side apple = new Side("Apple slices", 2, "a healthy option instead of fries");
 
