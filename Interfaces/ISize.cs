@@ -1,7 +1,19 @@
 namespace csharp_burgershack.Interfaces
 {
-    public interface ISize
-    {
-         
-    }
+  public interface ISize
+  {
+    double SizeMultiplier { get; set; }
+    double GetPrice(Size s);
+
+
+  }
+
+  public enum Size
+  {
+    small,
+    medium,
+    large,
+    xlarge,
+    murica
+  }
 }

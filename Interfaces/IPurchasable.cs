@@ -1,7 +1,7 @@
 namespace csharp_burgershack.Interfaces
 {
-    public interface IPurchasable
-    {
-         
-    }
+  public interface IPurchasable
+  {
+    double BasePrice { get; set; }
+  }
 }

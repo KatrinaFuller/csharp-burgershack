@@ -47,17 +47,17 @@ namespace csharp_burgershack.Services
       Drink coffee = new Drink("Coffee", 4, "For Stephanie");
       Drink monster = new Drink("Monster", 6, "When you really need some energy");
 
-      Entree burger = new Entree("Double Cheese Burger", 7, "Delicious cheese burger from Culvers");
+      Entree dburger = new Entree("Double Cheese Burger", 8, "Delicious cheese burger from Culvers");
+      Entree burger = new Entree("Cheese Burger", 7, "Delicious cheese burger");
       Entree sandwhich = new Entree("Chicken Sandwich", 7, "Healthier option from a burger");
-      Entree fish = new Entree("Fish", 8, "super nasty, do not get");
-      Entree tacos = new Entree("Tacos", 7, "everyone loves tacos!");
+      Entree nuggets = new Entree("Chicken Nuggets", 5, "5 piece chicken nuggets");
 
       Side fries = new Side("French fries", 2, "perfect crispy fries");
       Side curlyFries = new Side("Curly Fries", 3, "when regualr fires are not fun enough");
       Side curds = new Side("Cheese curds", 3, "delicious fried cheese");
       Side apple = new Side("Apple slices", 2, "a healthy option instead of fries");
 
-      MenuItem.AddRange(new MenuItem[] { drpepper, chocolateSmoothie, coffee, monster, burger, sandwhich, fish, tacos, fries, curlyFries, curds, apple });
+      MenuItem.AddRange(new MenuItem[] { drpepper, chocolateSmoothie, coffee, monster, dburger, burger, sandwhich, nuggets, fries, curlyFries, curds, apple });
     }
 
 
